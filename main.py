@@ -1,3 +1,7 @@
-from selenium import webdriver
+sample_file = './sample_file/wikepedia.txt'
 
-driver = webdriver.Chrome()
+my_file = open(sample_file, 'r')
+content = my_file.read()
+my_file.close()
+print(content)
+
